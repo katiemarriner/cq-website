@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+
+    <title>Capitol Quest</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar-example">
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand" id="home">Capitol Quest</h3>
+              <ul class="nav masthead-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <img src="images/capquest.svg" style="max-width: 400px;"/>
+          </div>
+
+        </div><!--cover-container-->
+      </div><!--site wrapper inner-->
+    </div><!--sitewrapper-->
+    
+    <div class="about" id="about">
+        <div class="vertical-center">
+            <h1>About</h1>
+            <center>
+                <p class="lead">Capitol Quest is a multiplayer mobile game that allows users to assume the role of local politicians and gain power through strategic play against other real users. Players pass bills, make backroom deals, gain political capital points and advance to the top. Capitol Quest is based on current events in the North Carolina General Assembly.</p>
+            </center>
+        </div>
+    </div>
+    
+    <div class="download" id="download">
+        <div class="vertical-center">
+            <h1>Download</h1>
+            <center>
+            <p class="lead">
+                Capitol Quest is not yet available. If you would like updates on this project, enter your email address below.
+            </p>
+            <form class="form-signin" role="form">
+                <input type="email" class="form-control" placeholder="Email address">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+            </form>
+            </center>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('body').scrollspy({ target: '.masthead' });
+        
+        $('[data-spy="scroll"]').each(function () {
+            var $spy = $(this).scrollspy('refresh')
+        });
+        
+        $('body').on('activate.bs.scrollspy', function () {
+            console.log("scrolled");
+        })
+    </script>
+  </body>
+</html>
